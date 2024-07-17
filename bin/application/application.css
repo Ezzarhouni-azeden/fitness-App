@@ -1,0 +1,12 @@
+.vbox_background_right{
+	
+	-fx-background-image:url("images.jpeg") 
+	
+} 
+.white-bg{
+	-fx-background-color:#fff; 
+	-fx-background-radius:6px; 
+}
+.chart {
+    -fx-alternative-row-fill-visible: true; 
+}

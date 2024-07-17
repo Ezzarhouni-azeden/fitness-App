@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300" minWidth="540" prefHeight="600" prefWidth="1080" style="-fx-background-color: #2b3452;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PreHomeGerantController">
+   <children>
+      <Button fx:id="dashboardButton" layoutX="651.0" layoutY="286.0" mnemonicParsing="false" onAction="#PreHomeToDashboard" prefHeight="44.0" prefWidth="363.0" style="-fx-background-color: #22223b;" text=" Dashboard" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow height="52.59" radius="28.425" width="63.11" />
+         </effect>
+      </Button>
+      <Button fx:id="goToBienvenueButton" layoutX="651.0" layoutY="376.0" mnemonicParsing="false" onAction="#PreHomeToBienvenue" prefHeight="44.0" prefWidth="363.0" style="-fx-background-color: #22223b;" text="Return" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow height="52.59" radius="28.425" width="63.11" />
+         </effect>
+      </Button>
+      <Button fx:id="addAdminButton" layoutX="651.0" layoutY="196.0" mnemonicParsing="false" onAction="#PreHomeToRegister" prefHeight="44.0" prefWidth="363.0" style="-fx-background-color: #22223b;" text="Add Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow height="42.06" radius="25.7925" width="63.11" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="524.0" fitWidth="474.0" layoutX="13.0" layoutY="48.0">
+         <image>
+            <Image url="@../../../../../Downloads/lift.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+      </ImageView>
+      <Label layoutX="706.0" layoutY="87.0" text="The Lobby">
+         <font>
+            <Font name="Tahoma Bold" size="48.0" />
+         </font>
+         <effect>
+            <Glow level="0.46" />
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.5088495068845496" centerY="0.5757575757575758" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2224999964237213" green="0.8899999856948853" blue="0.801056444644928" opacity="0.9399999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006729475100942127">
+                     <color>
+                        <Color red="0.2224999964237213" green="0.8899999856948853" blue="0.801056444644928" opacity="0.9399999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3146341463414634">
+                     <color>
+                        <Color red="0.2199999988079071" green="0.7870303988456726" blue="0.8799999952316284" opacity="0.9399999976158142" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

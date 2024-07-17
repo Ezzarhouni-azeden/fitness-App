@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerSceneAnchorPane" minHeight="300" minWidth="540" prefHeight="600" prefWidth="1080" style="-fx-background-color: #2F4F4F" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+<children>
+      <VBox layoutX="918.0" layoutY="-7.0" opacity="0.33" prefHeight="630.0" prefWidth="483.0" style="-fx-background-color: #b56576;">
+         <effect>
+            <DropShadow height="0.0" radius="23.465" width="95.86" />
+         </effect>
+      </VBox>
+    <Label layoutX="292.0" layoutY="298.0" text="Confirm Password:" textFill="WHITE">
+        <font>
+            <Font size="20.0" />
+        </font>
+         <effect>
+            <Bloom threshold="0.07" />
+         </effect>
+    </Label>
+    <Label layoutX="349.0" layoutY="247.0" text="Password:" textFill="WHITE">
+        <font>
+            <Font size="20.0" />
+        </font>
+         <effect>
+            <Bloom threshold="0.07" />
+         </effect>
+    </Label>
+    <Label layoutX="350.0" layoutY="198.0" text="Username:" textFill="WHITE">
+        <font>
+            <Font size="20.0" />
+        </font>
+         <effect>
+            <Bloom threshold="0.07" />
+         </effect>
+    </Label>
+    <PasswordField fx:id="newConfirmPassField" layoutX="481.0" layoutY="303.0" prefHeight="26.0" prefWidth="192.0">
+         <effect>
+            <DropShadow height="158.0" radius="85.56" width="186.24" />
+         </effect></PasswordField>
+    <Label layoutX="354.0" layoutY="151.0" text="FullName:" textFill="WHITE">
+        <font>
+            <Font size="20.0" />
+        </font>
+         <effect>
+            <Bloom threshold="0.07" />
+         </effect>
+    </Label>
+    <Button fx:id="signUpButton" layoutX="365.0" layoutY="408.0" mnemonicParsing="false" onAction="#add_btn" prefHeight="24.0" prefWidth="384.0" style="-fx-background-radius: 15; -fx-background-color: #0ead69;" text="Create account" textFill="WHITE" />
+    <Button fx:id="goToSignInPage" layoutX="361.0" layoutY="460.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="24.0" prefWidth="384.0" style="-fx-background-radius: 15; -fx-background-color: #114b5f;" text="Back" textFill="WHITE" />
+      <Label layoutX="382.0" layoutY="61.0" text="Add Admin Account" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <effect>
+            <Glow level="0.54" />
+         </effect>
+      </Label>
+      <VBox layoutX="-332.0" layoutY="-25.0" opacity="0.33" prefHeight="630.0" prefWidth="483.0" style="-fx-background-color: #b56576;">
+         <effect>
+            <DropShadow height="74.0" radius="41.75" width="95.0" />
+         </effect>
+      </VBox>
+    <PasswordField fx:id="newPassField" layoutX="480.0" layoutY="250.0" prefHeight="26.0" prefWidth="192.0">
+         <effect>
+            <DropShadow height="158.0" radius="85.56" width="186.24" />
+         </effect></PasswordField>
+    <TextField fx:id="newUserField" layoutX="460.0" layoutY="155.0" prefHeight="26.0" prefWidth="238.0">
+         <effect>
+            <DropShadow height="172.21" radius="89.11250000000001" width="186.24" />
+         </effect></TextField>
+    <TextField fx:id="newNameField" layoutX="458.0" layoutY="201.0" prefHeight="26.0" prefWidth="238.0">
+         <effect>
+            <DropShadow height="158.0" radius="85.56" width="186.24" />
+         </effect></TextField>
+</children>
+</AnchorPane>
